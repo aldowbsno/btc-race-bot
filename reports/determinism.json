@@ -1,0 +1,8 @@
+{
+  "actual_entrypoint_runs": 2,
+  "replies": 1440,
+  "byte_identical": true,
+  "matches_causal_simulator": true,
+  "sha256": "174282b7e638512558dd8aff210e6cff7f57758007ccf2c26d48410c182b4191",
+  "node_version": "v26.12.1"
+}

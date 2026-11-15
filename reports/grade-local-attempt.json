@@ -1,0 +1,15 @@
+{
+  "command": "node <kit>/cli/makefun.mjs grade-local --kit <kit> --bot <repo> --worktree --driver process --save <artifacts> --json",
+  "exit_code": 1,
+  "status": "blocked before score",
+  "official_grade_gate_passed": false,
+  "metrics": null,
+  "stderr": "makefun grade-local: git init: spawnSync git EPERM\n",
+  "parse_error": "Unexpected end of JSON input",
+  "runtime_sha256": {
+    "main.ts": "bf1da114792cb786230fd6bc3ad0c2fa13e6ccad7f110d071347bdf3ff5092aa",
+    "strategy.ts": "e90e2d17d7e24659ed07c09e8daffaefd1c3f6f17f7134dac9dce8eb6139495c",
+    "vendor/makefun-bars.ts": "9677370b0ab7e759c486a929afc95a11fb0fb32c7ec37053d3ebabd426aec5c8",
+    "package.json": "86430551a6ff5dc31174187cd715df4722023ef43aaa7a3052b9b3a9a87fe623"
+  }
+}

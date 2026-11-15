@@ -1,0 +1,174 @@
+{
+  "kind": "official bundled data verifier, engine and scorer in process; NOT grade-local, repository intake or container validation",
+  "kit_cli_sha256": "91a4911ba422d492c974b3d29ac320307caa2ec2b8fbc9cbd825a5e8e30938e4",
+  "dataset_sha256": "e8f1a56fbb15e65e087b1d3b77bee25f5d8262aeaae56fe030ff664c03ba3490",
+  "bar_stream_sha256": "e0285010edd234c69e96ef307ea6a2add303b6eac0a2179771f3a9b8116fc1a6",
+  "hello_seed": "13165426705920999708",
+  "official_dataset_verification": {
+    "ok": true,
+    "status": "accepted",
+    "problems": [],
+    "symbols": 1,
+    "bars": 1440,
+    "samples": 38815
+  },
+  "every_dev_batch_fill_and_account_matches": true,
+  "differential_synthetic_order_cases": 8,
+  "metrics": {
+    "net_pnl_quote_units": "1625393",
+    "return": "0.001625393",
+    "sharpe": "0.010161345",
+    "sortino": "0.017699768",
+    "max_drawdown": "0.005088027",
+    "win_rate": "0.333333333",
+    "trades": 17,
+    "rejected": 0,
+    "distinct_symbols": 1,
+    "fees_quote_units": "1425575",
+    "exposure": "0.025332823",
+    "per_symbol": [
+      {
+        "symbol": "CBBTC",
+        "pnl_quote_units": "1625393",
+        "trades": 17,
+        "fees_quote_units": "1425575"
+      }
+    ],
+    "interval": {
+      "level": "0.900000000",
+      "method": "bootstrap-symbols",
+      "resamples": 1000,
+      "seed": "13165426705920999708",
+      "low_quote_units": "1625393",
+      "high_quote_units": "1625393"
+    },
+    "block_hours": 1,
+    "per_block": [
+      {
+        "block": 0,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 1,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 2,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 3,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 4,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 5,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 6,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 7,
+        "pnl_quote_units": "-1398191"
+      },
+      {
+        "block": 8,
+        "pnl_quote_units": "-293480"
+      },
+      {
+        "block": 9,
+        "pnl_quote_units": "-323549"
+      },
+      {
+        "block": 10,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 11,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 12,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 13,
+        "pnl_quote_units": "-1263640"
+      },
+      {
+        "block": 14,
+        "pnl_quote_units": "-686743"
+      },
+      {
+        "block": 15,
+        "pnl_quote_units": "-496506"
+      },
+      {
+        "block": 16,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 17,
+        "pnl_quote_units": "4860547"
+      },
+      {
+        "block": 18,
+        "pnl_quote_units": "1803327"
+      },
+      {
+        "block": 19,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 20,
+        "pnl_quote_units": "-958891"
+      },
+      {
+        "block": 21,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 22,
+        "pnl_quote_units": "0"
+      },
+      {
+        "block": 23,
+        "pnl_quote_units": "382519"
+      }
+    ],
+    "cost_sensitivity": {
+      "fee_multiplier": 2,
+      "net_pnl_quote_units": "199167"
+    },
+    "constraints": {
+      "min_trades": 1,
+      "min_distinct_symbols": 0,
+      "max_drawdown": "0.250000000",
+      "trades_ok": true,
+      "symbols_ok": true,
+      "drawdown_ok": true,
+      "compliant": true
+    },
+    "contamination": {
+      "no_future_bars": true,
+      "final_window_first_bar_time": null,
+      "last_graded_receipt_at": null,
+      "window_after_receipts": null,
+      "dataset_sha256": "e8f1a56fbb15e65e087b1d3b77bee25f5d8262aeaae56fe030ff664c03ba3490"
+    }
+  },
+  "independent_simulator": {
+    "net_pnl_quote_units": "1625393",
+    "net_pnl_usdc": 1.625393,
+    "max_drawdown": 0.005088027,
+    "trades": 17,
+    "rejections": 0,
+    "fees_quote_units": "1425575"
+  },
+  "action_log_sha256": "174282b7e638512558dd8aff210e6cff7f57758007ccf2c26d48410c182b4191"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "btc-race-bot",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": { "test": "node --experimental-test-isolation=none --test tests/*.test.ts", "research": "node research/evaluate.ts" }
+}
