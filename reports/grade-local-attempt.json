@@ -158,7 +158,7 @@
   "stderr": "",
   "parse_error": null,
   "runtime_sha256": {
-    "main.ts": "bf1da114792cb786230fd6bc3ad0c2fa13e6ccad7f110d071347bdf3ff5092aa",
+    "main.ts": "36563dc6d3d3292e93b13da83550fe74880b078e6e850fa6beb09594f466dd26",
     "strategy.ts": "659ff399067ec436da506f74867e26fbf0f8db43eea7db0f1851667bb889f186",
     "vendor/makefun-bars.ts": "9677370b0ab7e759c486a929afc95a11fb0fb32c7ec37053d3ebabd426aec5c8",
     "package.json": "86430551a6ff5dc31174187cd715df4722023ef43aaa7a3052b9b3a9a87fe623"

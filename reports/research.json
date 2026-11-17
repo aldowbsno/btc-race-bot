@@ -675,6 +675,258 @@
       "fees_quote_units": "160361"
     }
   ],
+  "execution_sensitivity": [
+    {
+      "fee_bps": 0,
+      "slippage_bps": 0,
+      "net_pnl_quote_units": "1062657",
+      "net_pnl_usdc": 1.062657,
+      "max_drawdown": 0.0008224872166582796,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    },
+    {
+      "fee_bps": 0,
+      "slippage_bps": 2,
+      "net_pnl_quote_units": "982044",
+      "net_pnl_usdc": 0.982044,
+      "max_drawdown": 0.0008624767704219261,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    },
+    {
+      "fee_bps": 0,
+      "slippage_bps": 5,
+      "net_pnl_quote_units": "861155",
+      "net_pnl_usdc": 0.861155,
+      "max_drawdown": 0.000922438226380736,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    },
+    {
+      "fee_bps": 0,
+      "slippage_bps": 10,
+      "net_pnl_quote_units": "660404",
+      "net_pnl_usdc": 0.660404,
+      "max_drawdown": 0.0010223119788549614,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    },
+    {
+      "fee_bps": 0,
+      "slippage_bps": 20,
+      "net_pnl_quote_units": "259855",
+      "net_pnl_usdc": 0.259855,
+      "max_drawdown": 0.0012218214413318202,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    },
+    {
+      "fee_bps": 4,
+      "slippage_bps": 0,
+      "net_pnl_quote_units": "901447",
+      "net_pnl_usdc": 0.901447,
+      "max_drawdown": 0.0009024545902611911,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "160393"
+    },
+    {
+      "fee_bps": 4,
+      "slippage_bps": 2,
+      "net_pnl_quote_units": "821534",
+      "net_pnl_usdc": 0.821534,
+      "max_drawdown": 0.0009424050867516161,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "160361"
+    },
+    {
+      "fee_bps": 4,
+      "slippage_bps": 5,
+      "net_pnl_quote_units": "700716",
+      "net_pnl_usdc": 0.700716,
+      "max_drawdown": 0.001002304342720139,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "160313"
+    },
+    {
+      "fee_bps": 4,
+      "slippage_bps": 10,
+      "net_pnl_quote_units": "500086",
+      "net_pnl_usdc": 0.500086,
+      "max_drawdown": 0.0011020733547902712,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "160233"
+    },
+    {
+      "fee_bps": 4,
+      "slippage_bps": 20,
+      "net_pnl_quote_units": "-948451",
+      "net_pnl_usdc": -0.948451,
+      "max_drawdown": 0.0015375638066028282,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "159653"
+    },
+    {
+      "fee_bps": 8,
+      "slippage_bps": 0,
+      "net_pnl_quote_units": "740952",
+      "net_pnl_usdc": 0.740952,
+      "max_drawdown": 0.0009823733862612317,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "320722"
+    },
+    {
+      "fee_bps": 8,
+      "slippage_bps": 2,
+      "net_pnl_quote_units": "660436",
+      "net_pnl_usdc": 0.660436,
+      "max_drawdown": 0.0010222800326663355,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "320657"
+    },
+    {
+      "fee_bps": 8,
+      "slippage_bps": 5,
+      "net_pnl_quote_units": "540343",
+      "net_pnl_usdc": 0.540343,
+      "max_drawdown": 0.0010821184027300361,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "320561"
+    },
+    {
+      "fee_bps": 8,
+      "slippage_bps": 10,
+      "net_pnl_quote_units": "339832",
+      "net_pnl_usdc": 0.339832,
+      "max_drawdown": 0.0011817846491751075,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "320401"
+    },
+    {
+      "fee_bps": 8,
+      "slippage_bps": 20,
+      "net_pnl_quote_units": "-1575981",
+      "net_pnl_usdc": -1.575981,
+      "max_drawdown": 0.0016134953729113628,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "318867"
+    },
+    {
+      "fee_bps": 12,
+      "slippage_bps": 0,
+      "net_pnl_quote_units": "579871",
+      "net_pnl_usdc": 0.579871,
+      "max_drawdown": 0.001062237835023707,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "480986"
+    },
+    {
+      "fee_bps": 12,
+      "slippage_bps": 2,
+      "net_pnl_quote_units": "500054",
+      "net_pnl_usdc": 0.500054,
+      "max_drawdown": 0.001102105303546798,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "480890"
+    },
+    {
+      "fee_bps": 12,
+      "slippage_bps": 5,
+      "net_pnl_quote_units": "380033",
+      "net_pnl_usdc": 0.380033,
+      "max_drawdown": 0.0011618813943964192,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "480745"
+    },
+    {
+      "fee_bps": 12,
+      "slippage_bps": 10,
+      "net_pnl_quote_units": "-869493",
+      "net_pnl_usdc": -0.869493,
+      "max_drawdown": 0.0014978434176221942,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "479244"
+    },
+    {
+      "fee_bps": 12,
+      "slippage_bps": 20,
+      "net_pnl_quote_units": "-2074594",
+      "net_pnl_usdc": -2.074594,
+      "max_drawdown": 0.002074594,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "477796"
+    },
+    {
+      "fee_bps": 20,
+      "slippage_bps": 0,
+      "net_pnl_quote_units": "259203",
+      "net_pnl_usdc": 0.259203,
+      "max_drawdown": 0.0012218202421811852,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "801322"
+    },
+    {
+      "fee_bps": 20,
+      "slippage_bps": 2,
+      "net_pnl_quote_units": "-869652",
+      "net_pnl_usdc": -0.869652,
+      "max_drawdown": 0.0014980023176275332,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "799059"
+    },
+    {
+      "fee_bps": 20,
+      "slippage_bps": 5,
+      "net_pnl_quote_units": "-989143",
+      "net_pnl_usdc": -0.989143,
+      "max_drawdown": 0.0015573307635530617,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "798820"
+    },
+    {
+      "fee_bps": 20,
+      "slippage_bps": 10,
+      "net_pnl_quote_units": "-1655937",
+      "net_pnl_usdc": -1.655937,
+      "max_drawdown": 0.001655937,
+      "trades": 2,
+      "rejections": 0,
+      "fees_quote_units": "797484"
+    },
+    {
+      "fee_bps": 20,
+      "slippage_bps": 20,
+      "net_pnl_quote_units": "0",
+      "net_pnl_usdc": 0,
+      "max_drawdown": 0,
+      "trades": 0,
+      "rejections": 0,
+      "fees_quote_units": "0"
+    }
+  ],
   "sensitivity_profitable": 27,
   "sensitivity_total": 27,
   "subperiods": [

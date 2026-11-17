@@ -36,6 +36,18 @@ for (const length of [360,720]) for (let start=0;start+length<=data.bars.length;
 }
 const rolling = [];
 for (let start=0;start+720<=data.bars.length;start+=120) rolling.push({start_bar:start,bars:720,...evaluate({},data.bars.slice(start,start+720)).metrics()});
+// Fee and slippage scenarios rerun the policy: changing costs can change entries,
+// not merely subtract a constant from the originally selected trade log.
+const executionSensitivity = [];
+for (const feeBps of [0, 4, 8, 12, 20]) {
+  for (const slippageBps of [0, 2, 5, 10, 20]) {
+    const scenarioHello = structuredClone(data.hello);
+    scenarioHello.fees.fee_bps = feeBps;
+    scenarioHello.fees.slippage_bps = slippageBps;
+    executionSensitivity.push({fee_bps: feeBps, slippage_bps: slippageBps,
+      ...simulate(scenarioHello, data.bars, new RegimeBot()).metrics()});
+  }
+}
 const selected = evaluate({});
 const hash = replies => createHash('sha256').update(replies.map(r=>JSON.stringify(r)+'\n').join('')).digest('hex');
 const repeat = evaluate({});
@@ -61,7 +73,7 @@ const report = {
   identical_action_logs:hash(selected.replies)===hash(repeat.replies),
   action_log_sha256:hash(selected.replies),
   doubled_fees_with_policy_redecision:evaluate({},data.bars,8).metrics(),
-  hypotheses:candidates, sensitivity,
+  hypotheses:candidates, sensitivity, execution_sensitivity:executionSensitivity,
   sensitivity_profitable:sensitivity.filter(x=>x.net_pnl_usdc>0).length,
   sensitivity_total:sensitivity.length,
   subperiods, rolling_half_days:rolling, marked_six_hour_blocks:blockPnl,
