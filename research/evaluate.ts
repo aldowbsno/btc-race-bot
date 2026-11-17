@@ -7,18 +7,16 @@ import { RegimeBot, DEFAULTS } from '../strategy.ts';
 const kit = process.argv[2];
 if (!kit) throw Error('usage: node research/evaluate.ts <official-kit> [output.json]');
 const data = loadDev(kit);
-const initial = { fast:12, slow:36, trendReturn:0.004 };
+const initial = { mode:'both', lookback:60, fast:10, slow:36, trendReturn:0.008, trailFloor:0.0045 };
 const hypotheses = [
-  ['initial combined', initial], ['initial trend only', {...initial,mode:'trend'}],
-  ['initial reversal only', {...initial,mode:'reversal'}],
-  ['stronger trend 0.8%', {...initial,trendReturn:0.008}],
-  ['stronger trend 1.2%', {...initial,trendReturn:0.012}],
-  ['stronger trend 1.6%', {...initial,trendReturn:0.016}],
-  ['larger rebound', {...initial,trendReturn:0.008,rebound:0.006}],
-  ['deeper depression', {...initial,trendReturn:0.008,depression:0.018}],
-  ['longer regime memory', {...initial,trendReturn:0.008,regime:180}],
-  ['slower confirmation', {...initial,trendReturn:0.008,fast:18,slow:54}],
-  ['faster confirmation', {...initial,trendReturn:0.008,fast:8,slow:24}],
+  ['previous window defaults', initial], ['previous trend only', {...initial,mode:'trend'}],
+  ['previous reversal only', {...initial,mode:'reversal'}],
+  ['half-hour trend with previous trail', {trailFloor:0.0045}],
+  ['lower trend threshold', {trendReturn:0.008}],
+  ['higher trend threshold', {trendReturn:0.012}],
+  ['shorter trend window', {lookback:24}],
+  ['longer trend window', {lookback:36}],
+  ['two-hour trend window', {lookback:120}],
   ['selected stable neighborhood', {}],
 ];
 const evaluate = (cfg, bars = data.bars, fees = 4) => {
@@ -27,8 +25,8 @@ const evaluate = (cfg, bars = data.bars, fees = 4) => {
 };
 const candidates = hypotheses.map(([name,config]) => ({name,config:{...DEFAULTS,...config},...evaluate(config).metrics()}));
 const sensitivity = [];
-for (const fast of [10,12,14]) for (const slow of [30,36,42]) for (const rebound of [0.003,0.004,0.005,0.006]) {
-  const config = {fast,slow,rebound};
+for (const lookback of [24,30,36]) for (const trendReturn of [0.008,0.01,0.012]) for (const trailFloor of [0.0025,0.003,0.0035]) {
+  const config = {lookback,trendReturn,trailFloor};
   sensitivity.push({config,...evaluate(config).metrics()});
 }
 const subperiods = [];

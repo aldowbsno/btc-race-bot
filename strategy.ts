@@ -1,10 +1,11 @@
 // Original causal cbBTC strategy. All thresholds are dimensionless returns, volatility
 // multiples, costs from hello, or lengths of rolling observations. No calendar rule.
 export const DEFAULTS = Object.freeze({
-  mode: 'both', fast: 10, slow: 36, regime: 120, lookback: 60,
+  // Require a strong half-hour trend; avoid the weaker dip rebounds in chop.
+  mode: 'trend', fast: 10, slow: 36, regime: 120, lookback: 30,
   confirm: 3, cooldown: 20, maxHold: 240,
-  rebound: 0.004, depression: 0.012, trendReturn: 0.008,
-  stopATR: 3, trailATR: 2.5, trailFloor: 0.0045,
+  rebound: 0.004, depression: 0.012, trendReturn: 0.01,
+  stopATR: 3, trailATR: 2.5, trailFloor: 0.003,
   maxExposureBps: 2000, riskBps: 35, killDrawdownBps: 600,
 });
 
@@ -143,7 +144,7 @@ export class RegimeBot {
     if (opportunity < 3 * cost || momentum < cost / 2) return [];
     const id = state.clientId();
     this.pending = { id, side: 'buy', stop, trail, cost };
-    this.lastReason = reversal ? 'confirmed reversal' : 'confirmed trend';
+    this.lastReason = c.mode !== 'reversal' && trend ? 'confirmed trend' : 'confirmed reversal';
     return [{ side: 'buy', symbol: this.symbol, client_id: id, notional_quote_units: amount,
       max_slippage_bps: Math.ceil(clamp((slip + impact + 3 * this.atr) * 10000, 30, 150)) }];
   }

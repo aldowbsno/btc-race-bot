@@ -1,46 +1,46 @@
 {
   "kind": "official bundled data verifier, engine and scorer in process; NOT grade-local, repository intake or container validation",
-  "kit_cli_sha256": "91a4911ba422d492c974b3d29ac320307caa2ec2b8fbc9cbd825a5e8e30938e4",
-  "dataset_sha256": "e8f1a56fbb15e65e087b1d3b77bee25f5d8262aeaae56fe030ff664c03ba3490",
-  "bar_stream_sha256": "e0285010edd234c69e96ef307ea6a2add303b6eac0a2179771f3a9b8116fc1a6",
-  "hello_seed": "13165426705920999708",
+  "kit_cli_sha256": "990fe1f6c429b1e2ed14c98372b067914ab058709994e8fe51d36c0ab5edbb0f",
+  "dataset_sha256": "fe7f72ebd9c856238d49d62cec0c613856ded95cf98467fc0bd4d9daa76832d1",
+  "bar_stream_sha256": "3ae913aab8099937a1cc1ce6d986c17eac7f20f9fd9130c39e4aaa8e02f25631",
+  "hello_seed": "12332832071322557654",
   "official_dataset_verification": {
     "ok": true,
     "status": "accepted",
     "problems": [],
     "symbols": 1,
     "bars": 1440,
-    "samples": 38815
+    "samples": 42798
   },
   "every_dev_batch_fill_and_account_matches": true,
   "differential_synthetic_order_cases": 8,
   "metrics": {
-    "net_pnl_quote_units": "1625393",
-    "return": "0.001625393",
-    "sharpe": "0.010161345",
-    "sortino": "0.017699768",
-    "max_drawdown": "0.005088027",
-    "win_rate": "0.333333333",
-    "trades": 17,
+    "net_pnl_quote_units": "821534",
+    "return": "0.000821534",
+    "sharpe": "0.017831627",
+    "sortino": "0.033044533",
+    "max_drawdown": "0.000942405",
+    "win_rate": "1.000000000",
+    "trades": 2,
     "rejected": 0,
     "distinct_symbols": 1,
-    "fees_quote_units": "1425575",
-    "exposure": "0.025332823",
+    "fees_quote_units": "160361",
+    "exposure": "0.001116447",
     "per_symbol": [
       {
         "symbol": "CBBTC",
-        "pnl_quote_units": "1625393",
-        "trades": 17,
-        "fees_quote_units": "1425575"
+        "pnl_quote_units": "821534",
+        "trades": 2,
+        "fees_quote_units": "160361"
       }
     ],
     "interval": {
       "level": "0.900000000",
       "method": "bootstrap-symbols",
       "resamples": 1000,
-      "seed": "13165426705920999708",
-      "low_quote_units": "1625393",
-      "high_quote_units": "1625393"
+      "seed": "12332832071322557654",
+      "low_quote_units": "821534",
+      "high_quote_units": "821534"
     },
     "block_hours": 1,
     "per_block": [
@@ -74,15 +74,15 @@
       },
       {
         "block": 7,
-        "pnl_quote_units": "-1398191"
+        "pnl_quote_units": "0"
       },
       {
         "block": 8,
-        "pnl_quote_units": "-293480"
+        "pnl_quote_units": "821534"
       },
       {
         "block": 9,
-        "pnl_quote_units": "-323549"
+        "pnl_quote_units": "0"
       },
       {
         "block": 10,
@@ -98,15 +98,15 @@
       },
       {
         "block": 13,
-        "pnl_quote_units": "-1263640"
+        "pnl_quote_units": "0"
       },
       {
         "block": 14,
-        "pnl_quote_units": "-686743"
+        "pnl_quote_units": "0"
       },
       {
         "block": 15,
-        "pnl_quote_units": "-496506"
+        "pnl_quote_units": "0"
       },
       {
         "block": 16,
@@ -114,11 +114,11 @@
       },
       {
         "block": 17,
-        "pnl_quote_units": "4860547"
+        "pnl_quote_units": "0"
       },
       {
         "block": 18,
-        "pnl_quote_units": "1803327"
+        "pnl_quote_units": "0"
       },
       {
         "block": 19,
@@ -126,7 +126,7 @@
       },
       {
         "block": 20,
-        "pnl_quote_units": "-958891"
+        "pnl_quote_units": "0"
       },
       {
         "block": 21,
@@ -138,12 +138,12 @@
       },
       {
         "block": 23,
-        "pnl_quote_units": "382519"
+        "pnl_quote_units": "0"
       }
     ],
     "cost_sensitivity": {
       "fee_multiplier": 2,
-      "net_pnl_quote_units": "199167"
+      "net_pnl_quote_units": "660436"
     },
     "constraints": {
       "min_trades": 1,
@@ -159,16 +159,16 @@
       "final_window_first_bar_time": null,
       "last_graded_receipt_at": null,
       "window_after_receipts": null,
-      "dataset_sha256": "e8f1a56fbb15e65e087b1d3b77bee25f5d8262aeaae56fe030ff664c03ba3490"
+      "dataset_sha256": "fe7f72ebd9c856238d49d62cec0c613856ded95cf98467fc0bd4d9daa76832d1"
     }
   },
   "independent_simulator": {
-    "net_pnl_quote_units": "1625393",
-    "net_pnl_usdc": 1.625393,
-    "max_drawdown": 0.005088027,
-    "trades": 17,
+    "net_pnl_quote_units": "821534",
+    "net_pnl_usdc": 0.821534,
+    "max_drawdown": 0.0009424050867516161,
+    "trades": 2,
     "rejections": 0,
-    "fees_quote_units": "1425575"
+    "fees_quote_units": "160361"
   },
-  "action_log_sha256": "174282b7e638512558dd8aff210e6cff7f57758007ccf2c26d48410c182b4191"
+  "action_log_sha256": "32da9ceb275beb8e0594c4214d4f38348229f0fde40758c6bf2fd3e8e8028b5d"
 }

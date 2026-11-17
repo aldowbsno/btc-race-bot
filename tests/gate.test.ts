@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {profitableOfficialGrade} from '../scripts/grade-gate.ts';
 
 // Minimal example of the kit's public JSON summary shape, not a claimed grade.
-const summary=()=>({competition:'btc-race-24h-20261115-0828',phase:'dev',status:'finished',error:null,
+const summary=()=>({competition:'btc-race-24h-20261117-0603',phase:'dev',status:'finished',error:null,
   result_sha256:'1'.repeat(64),action_log_sha256:'2'.repeat(64),l1:{reproduced:true},
   result:{action_log_sha256:'2'.repeat(64),flags:[],performance:{kind:'bars-replay/v1',metrics:{
     net_pnl_quote_units:'1',max_drawdown:'0.250000000',trades:1,

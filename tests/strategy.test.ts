@@ -22,7 +22,8 @@ test('flat and monotonically falling prices do not force a trade',()=>{
 });
 
 test('trend branch participates in a sustained rise without a prior depression',()=>{
-  const prices=Array.from({length:500},(_,i)=>10000000000+i*2000000);
+  // The entry now requires a 1% rise over 29 intervals; a gentle drift is insufficient.
+  const prices=Array.from({length:500},(_,i)=>10000000000+i*5000000);
   const s=simulate(h,series(prices),new RegimeBot());
   assert(s.metrics().trades>0); assert(s.metrics().net_pnl_usdc>0);
   for(const r of s.resolutions) if(r.side==='buy'&&r.status==='filled') {
@@ -72,7 +73,7 @@ test('drawdown halt is sticky and liquidates using the account quantity',()=>{
 });
 
 test('a severe gap while exposed trips the kill switch and stays below 25% in this stress',()=>{
-  const prices=Array.from({length:320},(_,i)=>i<180?10000000000+i*2000000:2000000000);
+  const prices=Array.from({length:320},(_,i)=>i<180?10000000000+i*5000000:2000000000);
   const bot=new RegimeBot(),s=simulate(h,series(prices),bot);
   assert(s.metrics().trades>=2);assert(bot.halted);
   assert(s.metrics().max_drawdown<0.25);

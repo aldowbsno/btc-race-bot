@@ -11,6 +11,7 @@ const metrics=result?.result?.performance?.kind==='bars-replay/v1'?result.result
 const passed=profitableOfficialGrade(exit,result);
 const runtimeFiles=['main.ts','strategy.ts','vendor/makefun-bars.ts','package.json'];
 const report={command:'node <kit>/cli/makefun.mjs grade-local --kit <kit> --bot <repo> --worktree --driver process --save <artifacts> --json',
+  local_runtime:{node:process.version,node_options:process.env.NODE_OPTIONS??null},
   exit_code:exit,status:passed?'passed':(result?.status??'blocked before score'),
   official_grade_gate_passed:Boolean(passed),metrics,stderr,parse_error:parseError,
   runtime_sha256:Object.fromEntries(runtimeFiles.map(p=>[p,createHash('sha256').update(readFileSync(p)).digest('hex')]))};
